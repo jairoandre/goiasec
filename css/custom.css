@@ -1,0 +1,704 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Humanist';
+  src: url('../fonts/Humanist-777Bt-Light.otf');
+}
+
+body {
+  background: #01260e;
+}
+
+#header {
+  background: url(../imgs/header/bg.png);
+  height: 140px;
+}
+
+#upper-header {
+  height: 90px;
+}
+
+.header-logo {
+  margin-top: 13px;
+}
+
+.menu-item-separator {}
+
+
+/** HEADER RIGHT FORM **/
+
+.header-right {
+  position: relative;
+}
+
+#right-logo {
+  position: absolute;
+  top: 25px;
+  right: 262px;
+}
+
+#header-form {
+  position: absolute;
+  top: 43px;
+  right: 0;
+  width: 246px;
+  height: 22px;
+}
+
+.input-header {
+  width: 100px;
+  height: 22px;
+  padding: 5px;
+  font-size: 10px;
+  border: 1px solid #c2c2c2;
+  position: absolute;
+  top: 0;
+}
+
+.input-header--email {
+  left: 0;
+}
+
+.input-header--senha {
+  left: 109px;
+}
+
+.button-header {
+  position: absolute;
+  top: 0;
+  left: 218px;
+  padding: 0px;
+  border: none;
+  font-size: 10px;
+  width: 28px;
+  height: 22px;
+  background: url(../imgs/header/ok-btn.png);
+}
+
+.social-links {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+
+.en-link, .es-link {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+.en-link {
+  right: 28px;
+}
+
+
+/** END HEADER RIGHT FORM **/
+
+
+/** MENU **/
+
+#menu-nav {
+  background: transparent;
+  border: none;
+  font-family: "Gotham";
+  padding: 0;
+  margin-bottom: 0;
+  z-index: 2000;
+}
+
+#menu-nav li a {
+  color: #fff;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+#menu-nav li a {
+  background: url(../imgs/header/menu-separator.png) no-repeat 0;
+}
+
+#menu-nav li:first-child a {
+  background: none;
+}
+
+#menu-nav li.active a, #menu-nav li a:hover, #menu-nav li a:focus {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+/** END MENU **/
+
+
+/** GAMES **/
+
+#games {
+  background: url(../imgs/games/games-bg.jpg);
+  padding-top: 73px;
+  padding-bottom: 70px;
+}
+
+#games-content {
+  position: relative;
+  width: 1130;
+  height: 486px;
+}
+
+@media screen and (max-width: 1130px) {
+  #games {
+    display: none;
+  }
+}
+
+#next-game {
+  position: absolute;
+  width: 815px;
+  height: 282px;
+  background: url(../imgs/games/next-game.jpg);
+}
+
+#team1, #team2 {
+  position: absolute;
+  top: 120px;
+}
+
+#team1 {
+  left: 80px;
+}
+
+#team2 {
+  left: 275px;
+}
+
+.game-time {
+  position: absolute;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Humanist";
+  top: 20px;
+}
+
+#game-days-left {
+  right: 215px;
+}
+
+#game-hours-left {
+  right: 170px;
+}
+
+#game-minutes-left {
+  right: 110px;
+}
+
+#game-seconds-left {
+  right: 40px;
+}
+
+#game-description {
+  position: absolute;
+  font-family: "Gotham";
+  font-size: 20px;
+  color: #b3da45;
+  top: 105px;
+  right: 20px;
+}
+
+.game-info {
+  position: absolute;
+  color: #ccc;
+  font-family: "Humanist";
+  font-size: 15px;
+  right: 20px;
+}
+
+#game-info-date {
+  top: 140px;
+}
+
+#game-info-place {
+  top: 160px;
+}
+
+#game-info-league {
+  top: 180px;
+}
+
+#game-buy-ticket-btn {
+  position: absolute;
+  width: 103px;
+  height: 29px;
+  top: 215px;
+  right: 20px;
+}
+
+#games-banner1, #games-banner2 {
+  position: absolute;
+  top: 300px;
+  width: 400px;
+  height: 187px;
+}
+
+#games-banner2 {
+  left: 416px;
+}
+
+#game-register {
+  position: absolute;
+  background: url(../imgs/games/register-bg.jpg);
+  width: 300px;
+  height: 486px;
+  left: 830px;
+}
+
+.input-register {
+  height: 32px;
+  left: 37px;
+  color: #00703c;
+  font-size: 10px;
+  font-family: "Gotham";
+  padding: 10px;
+  border: none;
+  position: absolute;
+}
+
+#register-name-input {
+  top: 185px;
+  width: 228px;
+}
+
+#register-email-input {
+  top: 226px;
+  width: 228px;
+}
+
+#register-password-input, #register-password-confirm-input {
+  top: 268px;
+  width: 110px;
+}
+
+#register-password-confirm-input {
+  left: 155px;
+}
+
+#register-btn, #register-fb-btn {
+  position: absolute;
+  top: 310px;
+  left: 37px;
+}
+
+#register-fb-btn {
+  top: 430px;
+}
+
+.game-register-title {
+  color: #fff;
+  font-family: "Gotham";
+  font-size: 25px;
+  text-align: center;
+  padding: 30px 27px 0 27px;
+}
+
+.game-register-subtitle {
+  color: #ccc;
+  font-family: "Humanist";
+  font-size: 23px;
+  text-align: center;
+}
+
+.game-register-info {
+  position: absolute;
+  padding: 0 45px;
+  top: 375px;
+  color: #ccc;
+  font-family: "Humanist";
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/** TV **/
+
+.container--subscribe {
+  position: relative;
+  height: 60px;
+}
+
+.subscribe__mail {
+  position: absolute;
+  top: 16.5px;
+}
+
+.subscribe__text {
+  color: #00411b;
+  font-family: "Gotham";
+  font-size: 20px;
+  line-height: 60px;
+  margin-left: 52px;
+}
+
+.subscribe__input, .subscribe__btn {
+  position: absolute;
+  top: 15px;
+}
+
+.subscribe__input {
+  height: 34px;
+  border: 2px solid #00200d;
+  background: #00411b;
+  color: #fff;
+  width: 204px;
+  padding: 12px;
+}
+
+.subscribe__input--yellow {
+  background:
+}
+
+.subscribe__input--name {
+  right: 370px;
+}
+
+.subscribe__input--email {
+  right: 150px;
+}
+
+.subscribe__btn {
+  position: absolute;
+  right: 0;
+}
+
+#tv-content {
+  margin-top: 135px;
+}
+
+#video-playlist {
+  width: 320px;
+  height: 390px;
+}
+
+#video-tvgoias-title {
+  width: 266px;
+  height: 150px;
+}
+
+#tv-info {
+  padding: 40px 0 140px 0;
+}
+
+#video-list {
+  position: relative;
+  width: 320px;
+  height: 240px;
+}
+
+.video-item {
+  position: absolute;
+  width: 320px;
+  height: 100px;
+}
+
+.video-item-title, .video-item-date {
+  position: absolute;
+  width: 160px;
+  height: 30px;
+  color: #fff;
+  font-family: "Gotham";
+  font-size: 12px;
+  line-height: 15px;
+  top: 4px;
+  left: 155px;
+}
+
+.video-item-info {
+  position: absolute;
+  top: 50px;
+  left: 155px;
+  width: 160px;
+  height: 30px;
+  color: #fff;
+  font-family: "Humanist";
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.video-item-date {
+  top: 85px;
+  left: 155px;
+  color: #b3da45;
+}
+
+.video-item--1 {
+  top: 0;
+}
+
+.video-item--2 {
+  top: 138px;
+}
+
+.video-see-all {
+  position: absolute;
+  width: 312px;
+  height: 46px;
+  top: 278px;
+}
+
+#video-title {
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  font-family: "Gotham";
+  color: #fff;
+}
+
+#video-subtitle {
+  height: 15px;
+  line-height: 15px;
+  font-size: 15px;
+  font-family: "Humanist";
+  color: #fff;
+}
+
+#video-social-links-wrapper {
+  height: 50px;
+}
+
+#video-social-links-title {
+  position: absolute;
+  font-family: "Humanist";
+  font-size: 15px;
+  color: #fff;
+  top: 0;
+  right: 0;
+}
+
+#video-social-links {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+/** TEAM **/
+
+#team {
+  background: url(../imgs/team/team-bg.jpg);
+}
+
+#team-title {
+  padding: 73px 0;
+}
+
+#team-players-wrapper {
+  margin-bottom: 90px;
+}
+
+#team-players {
+  max-height: 360px;
+  overflow: hidden;
+}
+
+.team-player {
+  display: inline-flex;
+  margin-right: 23px;
+}
+
+
+/** SOCIAL **/
+
+#social {
+  height: 807px;
+}
+
+#social-title {
+  margin: 45px 0 75px 0;
+}
+
+
+/** SPONSORS **/
+
+#sponsors {
+  height: 180px;
+  background: #fff;
+  padding: 35px 0;
+}
+
+.row--sponsors {
+  padding: 15px;
+}
+
+
+/** STORE **/
+
+#store {
+  height: 590px;
+  overflow: hidden;
+}
+
+#store-title {
+  padding: 48px 0 37px 0;
+}
+
+.products {}
+
+.product {
+  position: relative;
+  background: url(../imgs/store/product-bg.jpg);
+  width: 300px;
+  height: 420px;
+  display: inline-block;
+}
+
+.product-picture {
+  padding: 25px 0 15px 0;
+  height: 260px;
+}
+
+.product-title {
+  font-family: "Gotham";
+  color: #0c542c;
+  line-height: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.product-price {
+  font-family: "Gotham";
+  color: #666666;
+  padding: 13px 0;
+  line-height: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+/** CLUB **/
+
+#club {
+  background: url(../imgs/club/club-bg.jpg);
+  height: 265px;
+}
+
+.container--club-banner {
+  padding: 16px 0;
+}
+
+
+/** FOOTER **/
+
+#footer {
+  background: url(../imgs/footer/footer-bg.jpg);
+  height: 92px;
+}
+
+.col--footer-banner {
+  padding: 14px 0;
+}
+
+.col--footer-copyright {
+  padding: 36.5px;
+}
+
+.col--footer-poweredby {
+  padding: 35px;
+}
+
+
+/** COMMON STYLES **/
+
+.green-bg {
+  background: url(../imgs/common/green-bg.jpg);
+}
+
+.white-bg {
+  background: url(../imgs/common/white-bg.jpg);
+}
+
+.row--tv {
+  margin-bottom: 110px;
+}
+
+
+/** MEDIA QUERYS **/
+
+@media screen and (min-width: 0px) {
+  .carousel-caption {
+    background: linear-gradient( 0deg, black, transparent);
+    left: 0;
+    right: auto;
+    padding-left: 8%;
+    bottom: 0;
+    padding-bottom: 10%;
+    text-align: left;
+    width: 100%;
+  }
+  .carousel-caption h2 {
+    font-size: 40px;
+    font-family: "Gotham";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #sponsors, #footer-logo, #footer-poweredby {
+    display: none;
+  }
+  #header {
+    height: 90px;
+  }
+  #menu-nav li a {
+    background: none;
+  }
+  .navbar-header {
+    margin-top: -90px;
+  }
+  .navbar-toggle {
+    height: 90px;
+    width: 90px;
+    border: none;
+    border-radius: 0px;
+    margin: 0;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 70px;
+    height: 4px;
+    border-radius: 1px;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    margin: 10px 0;
+  }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: hsla(0, 0%, 0%, 0.5);
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background: #01260e;
+    border-color: #e7e7e7;
+  }
+}
+
+#tv-only-player {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  #tv-content, #tv-info {
+    display: none;
+  }
+
+  #tv-only-player {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #header-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #games {
+    display: none;
+  }
+}
