@@ -130,6 +130,11 @@ body {
 
 /** END MENU **/
 
+/**  NEWS **/
+
+.col-padd-zero {
+  padding: 0;
+}
 
 /** GAMES **/
 
@@ -499,8 +504,7 @@ body {
 }
 
 .team-player {
-  display: inline-flex;
-  margin-right: 10px;
+  width: 192px;
 }
 
 .team-arrows {
@@ -651,7 +655,18 @@ body {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .hide-420px {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
+
+  .hide-768 {
+    display: none;
+  }
+
   #sponsors, #footer-logo, #footer-poweredby {
     display: none;
   }
