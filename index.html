@@ -17,12 +17,12 @@
       <div id="main-header">
         <div class="container-fluid">
           <div class="row" id="upper-header">
-            <div class="col-lg-8 col-lg-offset-4 col-md-10 col-md-offset-2">
+            <div class="col-xs-24 col-sm-24 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-4 ">
               <a href="#">
                 <img alt="Goiás Esporte Clube" class="header-logo" src="imgs/header/logo.png">
               </a>
             </div>
-            <div class="col-lg-8 col-md-10">
+            <div class="col-xs-24 col-sm-24 col-md-10 col-lg-8">
               <div class="header-right" id="header-right">
                 <img alt="Nação Esmeraldina" class="logo-r" id="right-logo" src="imgs/header/logo-r.png">
                 <div id="header-form">
@@ -50,7 +50,7 @@
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-16 col-lg-offset-4">
+            <div class="col-xs-24 col-sm-24 col-md-24 col-lg-16 col-lg-offset-4">
               <nav class="navbar navbar-default" id="menu-nav">
                 <div class="navbar-header">
                   <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#menu" data-toggle="collapse" type="button"><span class="sr-only">Opções</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
@@ -230,7 +230,7 @@
     </div>
     <!-- END GAMES SECTION -->
     <!-- TV SECTION -->
-    <div class="green-bg" id="tv">
+    <div id="tv" class="green-bg">
       <div class="container container--subscribe">
         <div class="row" id="tv-subscribe">
           <div class="col-lg-24 col-md-24">
@@ -336,47 +336,54 @@
     </div>
     <!-- END TV SECION -->
     <!-- TEAM SECTION -->
-    <div class="container-fluid" id="team">
-      <div class="row">
-        <div class="col-lg-24" id="team-title">
-          <img alt="NOSSO TIME" class="img-responsive center-block" src="imgs/team/team-title.png">
+    <div id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24" id="team-title">
+            <img alt="NOSSO TIME" class="img-responsive center-block" src="imgs/team/team-title.png">
+          </div>
+        </div>
+        <div class="row" id="team-players-wrapper">
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 team-arrows">
+            <a href="#leftarrow">
+              <img src="imgs/team/left-arrow.png" alt="Mover esquerda">
+            </a>
+          </div>
+          <div id="team-players" class="col-xs-22 col-sm-22 col-md-20 col-md-offset-1 col-lg-20 col-lg-offset-1">
+            <div class="team-player">
+              <img alt="" src="imgs/team/player01.jpg">
+            </div>
+            <div class="team-player">
+              <img alt="" src="imgs/team/player02.jpg">
+            </div>
+            <div class="team-player">
+              <img alt="" src="imgs/team/player03.jpg">
+            </div>
+            <div class="team-player">
+              <img alt="" src="imgs/team/player04.jpg">
+            </div>
+            <div class="team-player">
+              <img alt="" src="imgs/team/player01.jpg">
+            </div>
+            <div class="team-player">
+              <img alt="" src="imgs/team/player02.jpg">
+            </div>
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 team-arrows">
+            <a href="#rightarrow">
+              <img src="imgs/team/right-arrow.png" alt="Mover direita">
+            </a>
+          </div>
         </div>
       </div>
-      <div class="row" id="team-players-wrapper">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <div class="team-left-switch"></div>
-        </div>
-        <div class="col-lg-20 col-md-16 col-sm-16" id="team-players">
-          <div class="team-player center-block">
-            <img alt="" src="imgs/team/player01.jpg">
-          </div>
-          <div class="team-player">
-            <img alt="" src="imgs/team/player02.jpg">
-          </div>
-          <div class="team-player">
-            <img alt="" src="imgs/team/player03.jpg">
-          </div>
-          <div class="team-player">
-            <img alt="" src="imgs/team/player04.jpg">
-          </div>
-          <div class="team-player">
-            <img alt="" src="imgs/team/player01.jpg">
-          </div>
-          <div class="team-player">
-            <img alt="" src="imgs/team/player02.jpg">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2">
-          <div class="team-right-switch"></div>
-        </div>
-      </div>
+
     </div>
     <!-- END TEAM SECTION -->
     <!-- SOCIAL SECTION -->
-    <div class="green-bg" id="social">
+    <div id="social" class="green-bg">
       <div class="container container--subscribe">
         <div class="row">
-          <div class="col-lg-20 col-lg-offset-2 col-md-24 col-sm-24">
+          <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
             <img alt="" class="subscribe__mail" src="imgs/tv/mail.png"> <span class="subscribe__text">RECEBA EM MÃO AS NOTÍCIAS DO GOIÁS!</span>
             <input class="subscribe__input subscribe__input--name" placeholder="digite seu nome" type="text">
             <input class="subscribe__input subscribe__input--email" placeholder="digite seu email" type="text">
@@ -406,28 +413,44 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-20 col-lg-offset-2 col-md-24">
-            <div class="row">
-              <div class="col-lg-5">
-                <img alt="" class="center-block" src="imgs/social/youtube.png">
-              </div>
-              <div class="col-lg-5">
-                <img alt="" class="center-block" src="imgs/social/youtube.png">
-              </div>
-              <div class="col-lg-5">
-                <img alt="" class="center-block" src="imgs/social/facebook.png">
-              </div>
-              <div class="col-lg-5">
-                <img alt="" class="center-block" src="imgs/social/twitter.png">
-              </div>
+          <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24 social-imgs-wrapper">
+            <div class="social-img">
+              <img alt="" src="imgs/social/youtube.png">
+            </div>
+            <div class="social-img">
+              <img alt="" src="imgs/social/youtube.png">
+            </div>
+            <div class="social-img">
+              <img alt="" src="imgs/social/facebook.png">
+            </div>
+            <div class="social-img">
+              <img alt="" src="imgs/social/twitter.png">"
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24 social-imgs-wrapper">
+            <div class="social-img">
+              <img alt="" src="imgs/social/youtube.png">
+            </div>
+            <div class="social-img">
+              <img alt="" src="imgs/social/youtube.png">
+            </div>
+            <div class="social-img">
+              <img alt="" src="imgs/social/facebook.png">
+            </div>
+            <div class="social-img">
+              <img alt="" src="imgs/social/twitter.png">"
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    </div>
     <!-- END SOCIAL SECTION -->
     <!-- STORE SECTION -->
-    <div class="white-bg" id="store">
+    <div id="store" class="white-bg">
       <div class="container">
         <div class="row">
           <div class="col-lg-24">
@@ -514,7 +537,7 @@
     <div id="club">
       <div class="container">
         <div class="row">
-          <div class="col-lg-20 col-lg-offset-2 col-md-24 col-sm-24">
+          <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
             <div class="container--subscribe">
               <a href="#sub">
                 <img alt="" class="subscribe__mail" src="imgs/club/mail.png">

@@ -383,7 +383,7 @@ body {
 }
 
 #tv-info {
-  padding: 40px 0 140px 0;
+  padding: 40px 0 133px 0;
 }
 
 #video-list {
@@ -500,7 +500,11 @@ body {
 
 .team-player {
   display: inline-flex;
-  margin-right: 23px;
+  margin-right: 10px;
+}
+
+.team-arrows {
+  padding-top: 100px;
 }
 
 
@@ -512,6 +516,15 @@ body {
 
 #social-title {
   margin: 45px 0 75px 0;
+}
+
+.social-imgs-wrapper {
+  max-height: 260px;
+}
+
+.social-img {
+  vertical-align: top;
+  display: inline-flex;
 }
 
 
@@ -682,7 +695,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  #tv-content, #tv-info {
+  #tv-content, #tv-info, #social {
     display: none;
   }
 
