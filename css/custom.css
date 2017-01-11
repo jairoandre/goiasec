@@ -25,6 +25,11 @@ body {
   margin-top: 13px;
 }
 
+.header-logo-sm {
+  margin-top: 13px;
+  display: none;
+}
+
 .menu-item-separator {}
 
 
@@ -146,14 +151,7 @@ body {
 
 #games-content {
   position: relative;
-  width: 1130;
   height: 486px;
-}
-
-@media screen and (max-width: 1130px) {
-  #games {
-    display: none;
-  }
 }
 
 #next-game {
@@ -319,6 +317,27 @@ body {
   font-family: "Humanist";
   font-size: 14px;
   text-align: center;
+}
+
+.games-small {
+  display: none;
+}
+
+.games-small-wrapper {
+  width: 400px;
+}
+
+.game-small-info {
+  display: inline-block;
+}
+
+.games-small-img {
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.game-small-info-title {
+  font-weight: bold;
 }
 
 
@@ -488,6 +507,8 @@ body {
 
 #team {
   background: url(../imgs/team/team-bg.jpg);
+  height: 640px;
+  overflow: hidden;
 }
 
 #team-title {
@@ -535,7 +556,6 @@ body {
 /** SPONSORS **/
 
 #sponsors {
-  height: 180px;
   background: #fff;
   padding: 35px 0;
 }
@@ -544,11 +564,20 @@ body {
   padding: 15px;
 }
 
+.sponsors-sm {
+  display: none;
+}
+
+.sponsor-img {
+  display: inline-block;
+  margin: 0 10px;
+}
+
 
 /** STORE **/
 
 #store {
-  height: 590px;
+  height: 640px;
   overflow: hidden;
 }
 
@@ -556,14 +585,13 @@ body {
   padding: 48px 0 37px 0;
 }
 
-.products {}
-
 .product {
   position: relative;
   background: url(../imgs/store/product-bg.jpg);
   width: 300px;
   height: 420px;
-  display: inline-block;
+  box-shadow: 2px 2px 2px #888;
+
 }
 
 .product-picture {
@@ -586,6 +614,31 @@ body {
   line-height: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+.product-selector-wrapper {
+  display: none;
+  margin-top: 15px;
+}
+
+.product-selector-block {
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.product-selector {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  margin: 0 2px;
+  border-radius: 20px;
+  background: transparent;
+  display: inline-block;
+}
+
+.product-selector--active {
+  background: #000;
 }
 
 
@@ -620,6 +673,22 @@ body {
   padding: 35px;
 }
 
+.col--footer-poweredby-sm {
+  padding-top: 47px;
+}
+
+.poweredby-sm {
+  display: none;
+}
+.copyright-sm {
+  display: none;
+  padding: 10px 0;
+  background: rgb(16, 27, 15);
+}
+
+.footer-logo-sm, .footer-sm {
+  display: none;
+}
 
 /** COMMON STYLES **/
 
@@ -656,20 +725,20 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-  .hide-420px {
+  .hide-420 {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
 
+  .show-768 {
+    display: block;
+  }
   .hide-768 {
     display: none;
   }
 
-  #sponsors, #footer-logo, #footer-poweredby {
-    display: none;
-  }
   #header {
     height: 90px;
   }
@@ -710,7 +779,12 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  #tv-content, #tv-info, #social {
+
+  .show-992 {
+    display: block;
+  }
+
+  #tv-content, #tv-info, #social, .hide-992 {
     display: none;
   }
 
@@ -719,14 +793,14 @@ body {
   }
 }
 
-@media screen and (max-width: 1400px) {
-  #header-right {
+@media screen and (max-width: 1200px) {
+  .hide-1200 {
     display: none;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #games {
+@media screen and (max-width: 1400px) {
+  #header-right {
     display: none;
   }
 }

@@ -16,15 +16,16 @@
     <div id="header">
       <div id="main-header">
         <div class="container-fluid">
-          <div class="row" id="upper-header">
+          <div id="upper-header" class="row">
             <div class="col-xs-24 col-sm-24 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-4 ">
               <a href="#">
-                <img alt="Goiás Esporte Clube" class="header-logo img-responsive" src="imgs/header/logo.png">
+                <img alt="Goiás Esporte Clube" class="hide-768 header-logo" src="imgs/header/logo.png">
+                <img alt="Goiás Esporte Clube" class="show-768 header-logo-sm" src="imgs/header/logo-sm.png">
               </a>
             </div>
             <div class="col-xs-24 col-sm-24 col-md-10 col-lg-8">
-              <div class="header-right" id="header-right">
-                <img alt="Nação Esmeraldina" class="logo-r" id="right-logo" src="imgs/header/logo-r.png">
+              <div id="header-right" class="header-right">
+                <img id="right-logo" alt="Nação Esmeraldina" class="logo-r" src="imgs/header/logo-r.png">
                 <div id="header-form">
                   <input class="input-header input-header--email" placeholder="digite seu email" type="text">
                   <input class="input-header input-header--senha" placeholder="digite sua senha" type="text">
@@ -152,8 +153,8 @@
     <!-- GAMES SECTION -->
     <div id="games">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-24 col-md-24 col-sm-24">
+        <div class="row hide-992">
+          <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
             <div class="center-block" id="games-content">
               <div id="next-game">
                 <div id="team1">
@@ -202,7 +203,7 @@
                   <img alt="Banner 2" src="imgs/games/banner2.jpg">
                 </a>
               </div>
-              <div id="game-register">
+              <div id="game-register" class="hide-1200">
                 <form action="">
                   <div class="game-register-title">
                     LOREM IPSUM DOLOR SIT AMET
@@ -228,12 +229,34 @@
             </div>
           </div>
         </div>
+        <div class="row show-992 games-small">
+          <div class="col-xs-20 col-xs-offset-2 col-sm-24 col-sm-offset-2 col-padd-zero">
+            <div class="center-block games-small-wrapper">
+              <img alt="Goiás" height="100" class="games-small-img" src="imgs/games/team1.png" width="100">
+              <img alt="CRB" height="100" class="games-small-img" src="imgs/games/team2.png" width="100">
+              <div class="game-small-info" style="inline-block">
+                <div class="game-small-info-title">
+                  LOREM IPSUM DOLO
+                </div>
+                <div class="game-small-info-subtitle">
+                  Semi-Final
+                </div>
+                <div class="game-small-info-address">
+                  Lorem ipdum dolor amet
+                </div>
+                <div class="game-smal-info-when">
+                  Ter 14.06.2016 / 19:15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- END GAMES SECTION -->
     <!-- TV SECTION -->
     <div id="tv" class="green-bg">
-      <div class="container container--subscribe">
+      <div class="hide-768 container container--subscribe">
         <div class="row">
           <div class="col-lg-24 col-md-24">
             <img alt="" class="subscribe__mail" src="imgs/tv/mail.png"> <span class="subscribe__text">FAÇA SEU CADASTRO E ACOMPANHE O GOIÁS!</span>
@@ -328,7 +351,7 @@
       </div>
       <div class="container-fluid" id="tv-only-player">
         <div class="row">
-          <div class="col-lg-24">
+          <div class="col-padd-zero col-lg-24">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gPcn5MgHwYs"></iframe>
             </div>
@@ -341,8 +364,11 @@
     <div id="team">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24" id="team-title">
-            <img alt="NOSSO TIME" class="img-responsive center-block" src="imgs/team/team-title.png">
+          <div class="col-xs-20 col-xs-offset-2 col-sm-20 col-offset-sm-2 col-md-20 col-offset-md-2 col-lg-20 col-offset-lg-2" id="team-title">
+            <div class="center-block">
+              <img alt="NOSSO TIME" class="img-responsive center-block" src="imgs/team/team-title.png">
+            </div>
+
           </div>
         </div>
         <div class="row" id="team-players-wrapper">
@@ -359,7 +385,7 @@
               </map>
             </div>
           </div>
-          <div class="hide-420 col-sm-10 col-md-3 col-lg-3">
+          <div class="hide-768 col-sm-10 col-md-3 col-lg-3">
             <div class="team-player center-block">
               <img alt="" src="imgs/team/player02.jpg" usemap="#player02-map">
               <map name="player02-map">
@@ -367,7 +393,7 @@
               </map>
             </div>
           </div>
-          <div class="hide-768 col-sm-3 col-md-3 col-lg-3">
+          <div class="hide-992 col-md-3 col-lg-3">
             <div class="team-player center-block">
               <img alt="" src="imgs/team/player03.jpg" usemap="#player03-map">
               <map name="player03-map">
@@ -375,7 +401,7 @@
               </map>
             </div>
           </div>
-          <div class="hide-768 col-sm-3 col-md-3 col-lg-3">
+          <div class="hide-992 col-md-3 col-lg-3">
             <div class="team-player center-block">
               <img alt="" src="imgs/team/player04.jpg" usemap="#player04-map">
               <map name="player04-map">
@@ -383,7 +409,7 @@
               </map>
             </div>
           </div>
-          <div class="hide-768 col-sm-3 col-md-3 col-lg-3">
+          <div class="hide-992 col-md-3 col-lg-3">
             <div class="team-player center-block">
               <img alt="" src="imgs/team/player01.jpg" usemap="#player05-map">
               <map name="player05-map">
@@ -391,7 +417,7 @@
               </map>
             </div>
           </div>
-          <div class="hide-768 col-sm-3 col-md-3 col-lg-3">
+          <div class="hide-992 col-md-3 col-lg-3">
             <div class="team-player center-block">
               <img alt="" src="imgs/team/player02.jpg" usemap="#player06-map">
               <map name="player06-map">
@@ -476,15 +502,13 @@
         </div>
       </div>
     </div>
-    </div>
-    </div>
     <!-- END SOCIAL SECTION -->
     <!-- STORE SECTION -->
     <div id="store" class="white-bg">
       <div class="container">
         <div class="row">
-          <div class="col-lg-24">
-            <div id="store-title">
+          <div class="col-xs-20 col-xs-offset-2 col-sm-20 col-sm-offset-2 col-md-20 col-md-offset-2 col-lg-20 col-lg-offset-2">
+            <div id="store-title" class="center-block">
               <img alt="LOJA ONLINE" class="center-block" src="imgs/store/title.png">
             </div>
           </div>
@@ -492,8 +516,8 @@
       </div>
       <div class="container-fluid">
         <div class="row" id="products">
-          <div class="col-xs-6 col-sm-6 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-            <div class="product">
+          <div class="col-xs-24 col-sm-24 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+            <div class="product center-block">
               <div class="product-picture">
                 <img alt="Camisa" class="center-block" src="imgs/store/product1.png">
               </div>
@@ -510,7 +534,7 @@
               </div>
             </div>
           </div>
-          <div class="hide-420 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+          <div class="hide-992 col-xs-6 col-sm-6 col-md-4 col-lg-4">
             <div class="product">
               <div class="product-picture">
                 <img alt="Camisa" class="center-block" src="imgs/store/product2.png">
@@ -528,7 +552,7 @@
               </div>
             </div>
           </div>
-          <div class="hide-420 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+          <div class="hide-992 col-xs-6 col-sm-6 col-md-4 col-lg-4">
             <div class="product">
               <div class="product-picture">
                 <img alt="Camisa" class="center-block" src="imgs/store/product3.png">
@@ -546,7 +570,7 @@
               </div>
             </div>
           </div>
-          <div class="hide-420 col-xs-6 col-sm-6 col-md-4 col-lg-4">
+          <div class="hide-992 col-xs-6 col-sm-6 col-md-4 col-lg-4">
             <div class="product">
               <div class="product-picture">
                 <img alt="Camisa" class="center-block" src="imgs/store/product4.png">
@@ -565,10 +589,21 @@
             </div>
           </div>
         </div>
+        <div class="row show-992 product-selector-wrapper">
+          <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
+            <div class="product-selector-block center-block">
+              <a href="#p1" class="product-selector product-selector--active"></a>
+              <a href="#p1" class="product-selector product-selector"></a>
+              <a href="#p1" class="product-selector product-selector"></a>
+              <a href="#p1" class="product-selector product-selector"></a>
+              <a href="#p1" class="product-selector product-selector"></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- END STORE SECTION -->
-    <div id="club">
+    <div id="club" class="hide-768">
       <div class="container">
         <div class="row">
           <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
@@ -598,75 +633,50 @@
     <!-- SPONSERS SECTION -->
     <div id="sponsors">
       <div class="row">
-        <div class="col-lg-24">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-1 col-lg-offset-8 col-md-1 col-sm-1">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/brahma.png">
-              </div>
-              <div class="col-lg-1 col-md-1 col-sm-1">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/emporio.png">
-              </div>
-              <div class="col-lg-1 col-md-1 col-sm-1">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/nutri.png">
-              </div>
-              <div class="col-lg-1 col-md-1 col-sm-1">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/volks.png">
-              </div>
-              <div class="col-lg-1 col-md-1 col-sm-1">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/nativa.png">
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-2">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/america.png">
-              </div>
-              <div class="col-lg-1 col-md-1 col-sm-1">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/fitness.png">
-              </div>
-            </div>
-            <div class="row row--sponsors">
-              <div class="col-lg-2 col-lg-offset-4 col-md-2 col-sm-2">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/leinertex.png">
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-2">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/dryworld.png">
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-2">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/timemania.png">
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-2">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/piracanjuba.png">
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-2">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/sicoob.png">
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-2">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/anisrassi.png">
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-2">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/uniovo.png">
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-2">
-                <img alt="" class="center-block img-responsive" src="imgs/sponsors/alphapark.png">
-              </div>
-            </div>
+        <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24">
+          <div class="center-block" style="text-align: center">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/brahma.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/emporio.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/nutri.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/volks.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/nativa.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/america.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/fitness.png">
+          </div>
+          <div class="center-block" style="text-align: center">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/leinertex.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/dryworld.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/timemania.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/piracanjuba.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/sicoob.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/anisrassi.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/uniovo.png">
+            <img alt="" class="img-responsive sponsor-img" src="imgs/sponsors/alphapark.png">
           </div>
         </div>
       </div>
+
     </div>
     <!-- END SPONSERS SECTION -->
     <!-- FOOTER SECTION -->
     <div id="footer">
       <div class="container-fluid">
         <div class="row">
-          <div id="footer-logo" class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-5 col-sm-0 col--footer-banner">
-            <img alt="" src="imgs/footer/footer-banner.png">
+          <div id="footer-logo" class="col-xs-12 col-sm-12 col-md-5 col-md-offset-5 col-lg-5 col-lg-offset-2 col--footer-banner">
+            <img alt="" class="hide-768" src="imgs/footer/footer-banner.png">
+            <img alt="" class="footer-logo-sm show-768" src="imgs/footer/footer-logo-sm.png">
           </div>
-          <div class="col-lg-10 col-md-10 col-sm-24 col--footer-copyright">
+          <div class="col-md-10 col-lg-10 col--footer-copyright hide-768">
             <img alt="" class="center-block" src="imgs/footer/copyright.png">
           </div>
-          <div id="footer-poweredby" class="col-lg-5 col-md-5 col-sm-5 col--footer-poweredby">
-            <img alt="" src="imgs/footer/poweredby.png">
+          <div id="footer-poweredby" class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col--footer-poweredby">
+            <img alt="" class="img-responsive" src="imgs/footer/poweredby.png">
           </div>
+        </div>
+      </div>
+      <div class="row copyright-sm show-768">
+        <div class="col-xs-24 col-sm-24">
+          <img alt="" class="center-block img-responsive" src="imgs/footer/copyright.png">
         </div>
       </div>
     </div>
