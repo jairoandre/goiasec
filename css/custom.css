@@ -502,12 +502,10 @@ body {
   right: 0;
 }
 
-
 /** TEAM **/
 
 #team {
   background: url(../imgs/team/team-bg.jpg);
-  height: 640px;
   overflow: hidden;
 }
 
@@ -577,7 +575,6 @@ body {
 /** STORE **/
 
 #store {
-  height: 640px;
   overflow: hidden;
 }
 
@@ -704,6 +701,33 @@ body {
   margin-bottom: 110px;
 }
 
+.mobile-title, .mobile-video-title {
+  color: #087440;
+  font-family: "Gotham";
+  text-align: center;
+  font-size: 25px;
+}
+
+.mobile-title {
+  height: 52px;
+  line-height: 52px;
+  background: #b3d945;
+  display: none;
+}
+
+.mobile-video-title {
+  font-size: 20px;
+  line-height: 50px;
+  background: #fff;
+}
+
+.mobile-video-subtitle {
+  font-size: 15px;
+  text-align: center;
+  font-family: "Humanist";
+  background: #fff;
+  padding-bottom: 10px;
+}
 
 /** MEDIA QUERYS **/
 
@@ -730,13 +754,25 @@ body {
   }
 }
 
+.visible-at-768 {
+  display: none;
+}
+
+
 @media screen and (max-width: 768px) {
+
+  .visible-at-768 {
+    display: block;
+  }
 
   .show-768 {
     display: block;
   }
   .hide-768 {
     display: none;
+  }
+  .mobile-title {
+    display: block;
   }
 
   #header {
